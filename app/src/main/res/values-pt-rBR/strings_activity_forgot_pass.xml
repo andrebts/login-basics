@@ -1,0 +1,6 @@
+<resources>
+
+    <!-- Strings related to forgot account-->
+    <string name="action_recover">Recuperar</string>
+    <string name="remembered_password">Acabou de lembrar?</string>
+</resources>

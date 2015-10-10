@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AppBase</string>
+
+    <string name="permission_rationale">"É necessária uma permissão de acesso aos contatos para auto-completar
+        o campo email."
+    </string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Abrir navegação</string>
+    <string name="navigation_drawer_close">Fechar navegação</string>
+
+    <string name="action_settings">Configurações</string>
+</resources>

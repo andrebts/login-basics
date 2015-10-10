@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">AppBase</string>
+
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="title_activity_register">RegisterActivity</string>
+
+    <string name="title_activity_forgot">ForgotPassActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="facebook_app_id">Your facebook app id</string>
+</resources>

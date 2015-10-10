@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Strings related to login -->
+    <string name="app_decription">Seu app espetacular</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Senha</string>
+    <string name="action_sign_in">Entrar</string>
+    <string name="different_login">ou</string>
+    <string name="plus_sign_out">Trocar a conta Google+</string>
+    <string name="plus_disconnect">Desconectar a conta Google+</string>
+    <string name="error_invalid_email">Este email não é válido</string>
+    <string name="error_invalid_password">A senha é muito curta</string>
+    <string name="error_incorrect_password">Email e/ou senha está incorreto(s)</string>
+    <string name="error_field_required">Campo obrigatório</string>
+    <string name="forgot_password">Esqueceu a senha?</string>
+    <string name="create_account">Não tem conta?</string>
+</resources>

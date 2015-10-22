@@ -3,9 +3,7 @@ Login Basics
 Login Basics is an implementation of an Android app that support Login with Facebook, Google Plus (G+) and your own login logic.
 The aim of this project is to serve as basis to build apps that require login as a feature.
 
-```
-
-## Screenshots
+Screenshots
 -------
 ![Login screenshot][1]
 ![ForgotPass screenshot][2]
@@ -13,9 +11,8 @@ The aim of this project is to serve as basis to build apps that require login as
 ![Required screenshot][4]
 ![Invalid screenshot][5]
 
-```
 
-## Me
+Me
 -------
 André Batista da Silva
 * LinkedIn [andrebts](https://br.linkedin.com/in/andrebts)

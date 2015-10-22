@@ -57,7 +57,7 @@
                 <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <AutoCompleteTextView
-                        android:id="@+id/txt_email"
+                        android:id="@+id/edit_email"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/prompt_email"

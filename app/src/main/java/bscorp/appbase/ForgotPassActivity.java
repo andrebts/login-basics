@@ -35,7 +35,7 @@ public class ForgotPassActivity extends Activity implements View.OnClickListener
         String email;
         if (savedInstanceState == null) {
             Bundle extras = getIntent().getExtras();
-            email = extras == null ? "" : extras.getString(Constants.TAG_EMAIL);
+            email = (extras == null) ? "" : extras.getString(Constants.TAG_EMAIL);
         } else {
             email = savedInstanceState.getString(Constants.TAG_EMAIL);
         }
@@ -134,7 +134,7 @@ public class ForgotPassActivity extends Activity implements View.OnClickListener
             mForgotTask = null;
             CheckNetwork checkNetwork = new CheckNetwork();
             if (checkNetwork.isConnected(ForgotPassActivity.this) && success) {
-                Toast.makeText(ForgotPassActivity.this, "Account created", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ForgotPassActivity.this, edit_email.getText() + " your new passwork is ...", Toast.LENGTH_SHORT).show();//Or whatever your recovery method is...
             } else {
                 Toast.makeText(ForgotPassActivity.this, "Network Error", Toast.LENGTH_SHORT).show();
             }

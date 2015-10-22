@@ -190,10 +190,12 @@ public class LoginActivity extends AppCompatActivity implements
 
             @Override
             public void onCancel() {
+                Toast.makeText(LoginActivity.this, "User cancelled", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onError(FacebookException exception) {
+                Toast.makeText(LoginActivity.this, "Error on Login, check your facebook app_id", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -450,6 +452,7 @@ public class LoginActivity extends AppCompatActivity implements
         // grant permissions or resolve an error in order to sign in. Refer to the javadoc for
         // ConnectionResult to see possible error codes.
         Log.d(Constants.TAG_LOGIN, "onConnectionFailed:" + connectionResult);
+        ringProgressDialog.dismiss();
 
         if (!mIsResolving && mShouldResolve) {
             if (connectionResult.hasResolution()) {
@@ -458,11 +461,13 @@ public class LoginActivity extends AppCompatActivity implements
                     mIsResolving = true;
                 } catch (IntentSender.SendIntentException e) {
                     Log.e(Constants.TAG_LOGIN, "Could not resolve ConnectionResult.", e);
+                    Toast.makeText(LoginActivity.this, "Could not resolve ConnectionResult", Toast.LENGTH_LONG).show();
                     mIsResolving = false;
                 }
             } else {
                 // Could not resolve the connection result, show the user an
                 // error dialog.
+                Toast.makeText(LoginActivity.this, "Error on Login, check your google + login method", Toast.LENGTH_LONG).show();
             }
         } else {
             // Show the signed-out UI
@@ -492,6 +497,7 @@ public class LoginActivity extends AppCompatActivity implements
             //new LoadProfileImage().execute(personPhotoUrl);
 
         } else {
+            ringProgressDialog.dismiss();
             Toast.makeText(getApplicationContext(),
                     "Person information is null", Toast.LENGTH_LONG).show();
         }

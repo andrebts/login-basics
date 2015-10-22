@@ -443,6 +443,7 @@ public class LoginActivity extends AppCompatActivity implements
 
     @Override
     public void onConnectionSuspended(int arg0) {
+        ringProgressDialog.dismiss();
         mGoogleApiClient.connect();
     }
 
@@ -478,6 +479,7 @@ public class LoginActivity extends AppCompatActivity implements
      * Fetching user's information name, email, profile pic
      * */
     private void getProfileInformation() {
+        ringProgressDialog.dismiss();
         if (Plus.PeopleApi.getCurrentPerson(mGoogleApiClient) != null) {
             Person currentPerson = Plus.PeopleApi
                     .getCurrentPerson(mGoogleApiClient);
@@ -497,7 +499,6 @@ public class LoginActivity extends AppCompatActivity implements
             //new LoadProfileImage().execute(personPhotoUrl);
 
         } else {
-            ringProgressDialog.dismiss();
             Toast.makeText(getApplicationContext(),
                     "Person information is null", Toast.LENGTH_LONG).show();
         }

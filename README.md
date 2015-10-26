@@ -20,7 +20,7 @@ Facebook
 
 - Create an Facebook app at https://developers.facebook.com/apps/;
 - Replace the value of facebook_app_id at strings.xml;
-
+ 
 
 Google
 -------

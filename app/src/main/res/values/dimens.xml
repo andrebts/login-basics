@@ -9,4 +9,6 @@
     <dimen name="fab_margin">0dp</dimen>
     <dimen name="loginactivity_logo_from_login">20dp</dimen>
 
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+
 </resources>

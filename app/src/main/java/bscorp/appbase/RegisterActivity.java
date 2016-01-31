@@ -76,17 +76,18 @@ public class RegisterActivity extends Activity implements View.OnClickListener{
             edit_email.setError(getString(R.string.error_field_required));
             focusView = edit_email;
             cancel = true;
-        } else if (validate.isEmailValid(email)) {
+        } else if (!validate.isEmailValid(email)) {
             edit_email.setError(getString(R.string.error_invalid_email));
             focusView = edit_email;
             cancel = true;
-        } else {
-            // Check for a valid password, if the user entered one.
-            if (TextUtils.isEmpty(password) || validate.isPasswordValid(password)) {
-                edit_password.setError(getString(R.string.error_invalid_password));
-                focusView = edit_password;
-                cancel = true;
-            }
+        } else if (TextUtils.isEmpty(password)) {
+            edit_password.setError(getString(R.string.error_field_required));
+            focusView = edit_password;
+            cancel = true;
+        } else if (!validate.isPasswordValid(password)) {
+            edit_password.setError(getString(R.string.error_invalid_password));
+            focusView = edit_password;
+            cancel = true;
         }
 
         if (cancel) {

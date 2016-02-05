@@ -71,7 +71,7 @@ public class ForgotPassActivity extends Activity implements View.OnClickListener
             edit_email.setError(getString(R.string.error_field_required));
             focusView = edit_email;
             cancel = true;
-        } else if (validate.isEmailValid(email)) {
+        } else if (!validate.isEmailValid(email)) {
             edit_email.setError(getString(R.string.error_invalid_email));
             focusView = edit_email;
             cancel = true;

@@ -5,11 +5,12 @@ The aim of this project is to serve as basis to build apps that require login as
 
 Screenshots
 -------
-![Login screenshot][1]
-![ForgotPass screenshot][2]
-![Progress screenshot][3]
-![Required screenshot][4]
-![Invalid screenshot][5]
+<a href="url"><img src=./art/Screenshot_2015-10-22-15-50-10.png height="550"  ></a>
+<a href="url"><img src=./art/Screenshot_2015-10-22-15-50-24.png height="550"  ></a>
+<a href="url"><img src=./art/Screenshot_2015-10-22-15-50-34.png height="550"  ></a>
+<a href="url"><img src=./art/Screenshot_2015-10-22-15-54-04.png height="550"  ></a>
+<a href="url"><img src=./art/Screenshot_2015-10-22-15-54-47.png height="550"  ></a>
+
 
 Steps
 -------
@@ -58,10 +59,3 @@ License
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
-
-	
-[1]: ./art/Screenshot_2015-10-22-15-50-10.png
-[2]: ./art/Screenshot_2015-10-22-15-50-24.png
-[3]: ./art/Screenshot_2015-10-22-15-50-34.png
-[4]: ./art/Screenshot_2015-10-22-15-54-04.png
-[5]: ./art/Screenshot_2015-10-22-15-54-47.png
